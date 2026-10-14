@@ -1,0 +1,703 @@
+/* ================================
+   RESET
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    color: black;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+
+/* ================================
+   HERO
+================================ */
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 0.5;
+}
+
+.hero-text {
+    position: absolute;
+    z-index: 2;
+
+    top: 58%;
+    left: 8%;
+
+    transform: translateY(-50%);
+
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: clamp(45px, 6vw, 90px);
+    line-height: 0.95;
+    font-weight: bold;
+}
+
+.hero-text p {
+    font-size: clamp(16px, 2vw, 24px);
+    margin-top: 20px;
+}
+
+
+/* ================================
+   YOUR STORY MATTERS SECTION
+================================ */
+
+.story-section {
+    min-height: 100vh;
+
+    background-color: #f5f1e8;
+
+    display: grid;
+    grid-template-columns: 45% 55%;
+
+    align-items: stretch;
+
+    border-bottom: 6px solid black;
+}
+
+
+/* IMAGE */
+
+.story-image {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.story-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* TEXT */
+
+.story-content {
+    padding: 10%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.story-content h2 {
+    font-size: clamp(55px, 6vw, 100px);
+
+    font-style: italic;
+
+    line-height: 0.9;
+
+    margin-bottom: 45px;
+}
+
+.story-content > p {
+    font-size: 22px;
+
+    line-height: 1.5;
+
+    max-width: 650px;
+
+    margin-bottom: 45px;
+}
+
+
+/* OPTIONS */
+
+.story-options {
+    display: flex;
+    gap: 20px;
+}
+
+.story-option {
+    flex: 1;
+
+    background-color: #171717;
+    color: white;
+
+    padding: 30px;
+
+    min-height: 170px;
+
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    transition: 0.25s ease;
+}
+
+.story-option:hover {
+    transform: translateY(-6px);
+    background-color: #9f2929;
+}
+
+.story-option span {
+    font-size: 28px;
+
+    margin-bottom: 15px;
+}
+
+.story-option h3 {
+    font-size: 21px;
+
+    margin-bottom: 8px;
+}
+
+.story-option p {
+    font-size: 14px;
+
+    line-height: 1.4;
+}
+
+
+/* ================================
+   SHARE VIDEO SECTION
+================================ */
+
+.video-section {
+    min-height: 100vh;
+
+    background-color: #f5f1e8;
+
+    display: grid;
+
+    grid-template-columns: 55% 45%;
+
+    align-items: stretch;
+}
+
+
+/* TEXT */
+
+.video-content {
+    padding: 10%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.video-content h2 {
+    font-size: clamp(55px, 6vw, 100px);
+
+    font-style: italic;
+
+    line-height: 0.9;
+
+    margin-bottom: 40px;
+}
+
+.video-content p {
+    font-size: 22px;
+
+    line-height: 1.5;
+
+    max-width: 600px;
+
+    margin-bottom: 40px;
+}
+
+
+/* BUTTON */
+
+.video-button {
+    display: inline-block;
+
+    width: fit-content;
+
+    padding: 20px 35px;
+
+    background-color: #171717;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    transition: 0.25s ease;
+}
+
+.video-button:hover {
+    background-color: #9f2929;
+
+    transform: translateY(-4px);
+}
+
+
+/* IMAGE */
+
+.video-image {
+    width: 100%;
+    height: 100%;
+}
+
+.video-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* ================================
+   TELL YOUR STORY SECTION
+================================ */
+
+.story-form-section {
+    min-height: 100vh;
+
+    background-color: #f5f1e8;
+
+    display: grid;
+
+    grid-template-columns: 45% 55%;
+
+    align-items: stretch;
+
+    border-top: 6px solid black;
+}
+
+
+/* IMAGE */
+
+.story-form-image {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.story-form-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* TEXT */
+
+.story-form-content {
+    padding: 10%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.story-form-content h2 {
+    font-size: clamp(55px, 6vw, 100px);
+
+    font-style: italic;
+
+    line-height: 0.9;
+
+    margin-bottom: 40px;
+}
+
+.story-form-content p {
+    font-size: 22px;
+
+    line-height: 1.5;
+
+    max-width: 600px;
+
+    margin-bottom: 25px;
+}
+
+.story-form-content .small-text {
+    font-size: 17px;
+
+    font-style: italic;
+
+    margin-bottom: 40px;
+}
+
+
+/* BUTTON */
+
+.story-form-button {
+    display: inline-block;
+
+    width: fit-content;
+
+    padding: 20px 35px;
+
+    background-color: #171717;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    transition: 0.25s ease;
+}
+
+.story-form-button:hover {
+    background-color: #9f2929;
+
+    transform: translateY(-4px);
+}
+
+
+/* ==================================================
+   MOBILE
+   ================================================== */
+
+@media (max-width: 800px) {
+
+
+    /* -----------------------------
+       HERO
+    ----------------------------- */
+
+    .hero {
+        width: 100%;
+        height: 100svh;
+
+        min-height: 600px;
+
+        overflow: hidden;
+    }
+
+    .hero img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+    .hero-text {
+        top: 55%;
+        left: 7%;
+        right: 7%;
+
+        transform: translateY(-50%);
+    }
+
+    .hero-text h1 {
+        font-size: 38px;
+
+        line-height: 1.05;
+    }
+
+    .hero-text p {
+        font-size: 15px;
+
+        margin-top: 15px;
+    }
+
+
+    /* -----------------------------
+       YOUR STORY MATTERS
+    ----------------------------- */
+
+    .story-section {
+        width: 100%;
+
+        min-height: auto;
+
+        display: flex;
+
+        flex-direction: column;
+
+        background-color: #f5f1e8;
+
+        border-bottom: 6px solid black;
+    }
+
+
+    /* BIG MOBILE IMAGE */
+
+    .story-image {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+}
+
+.story-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+        display: block;
+    }
+
+
+    /* TEXT UNDER IMAGE */
+
+    .story-content {
+        width: 100%;
+
+        padding: 70px 8%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: center;
+    }
+
+    .story-content h2 {
+        font-size: 55px;
+
+        line-height: 0.9;
+
+        margin-bottom: 35px;
+    }
+
+    .story-content > p {
+        font-size: 19px;
+
+        line-height: 1.5;
+
+        margin-bottom: 35px;
+    }
+
+
+    /* BUTTONS */
+
+    .story-options {
+        width: 100%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .story-option {
+        width: 100%;
+
+        min-height: 150px;
+
+        padding: 25px;
+    }
+
+    .story-option span {
+        font-size: 25px;
+    }
+
+    .story-option h3 {
+        font-size: 20px;
+    }
+
+    .story-option p {
+        font-size: 14px;
+    }
+
+
+    /* -----------------------------
+       VIDEO SECTION
+    ----------------------------- */
+
+    .video-section {
+        width: 100%;
+
+        min-height: auto;
+
+        display: flex;
+
+        flex-direction: column;
+
+        background-color: #f5f1e8;
+    }
+
+
+    /* IMAGE FIRST ON MOBILE */
+
+    .video-image {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+}
+
+.video-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+    
+
+
+    /* TEXT SECOND */
+
+    .video-content {
+        width: 100%;
+
+        padding: 70px 8%;
+
+        order: 2;
+    }
+
+    .video-content h2 {
+        font-size: 55px;
+
+        line-height: 0.9;
+
+        margin-bottom: 30px;
+    }
+
+    .video-content p {
+        font-size: 19px;
+
+        line-height: 1.5;
+
+        margin-bottom: 35px;
+    }
+
+    .video-button {
+        padding: 18px 28px;
+
+        font-size: 16px;
+    }
+
+
+    /* -----------------------------
+       TELL YOUR STORY
+    ----------------------------- */
+
+    .story-form-section {
+        width: 100%;
+
+        min-height: auto;
+
+        display: flex;
+
+        flex-direction: column;
+
+        background-color: #f5f1e8;
+
+        border-top: 6px solid black;
+    }
+
+
+    /* BIG IMAGE */
+
+    .story-form-image {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+}
+
+.story-form-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+
+    /* TEXT */
+
+    .story-form-content {
+        width: 100%;
+
+        padding: 70px 8%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: center;
+    }
+
+    .story-form-content h2 {
+        font-size: 55px;
+
+        line-height: 0.9;
+
+        margin-bottom: 35px;
+    }
+
+    .story-form-content p {
+        font-size: 19px;
+
+        line-height: 1.5;
+
+        margin-bottom: 25px;
+    }
+
+    .story-form-content .small-text {
+        font-size: 16px;
+
+        margin-bottom: 35px;
+    }
+
+    .story-form-button {
+        padding: 18px 28px;
+
+        font-size: 16px;
+    }
+@media screen and (max-width: 800px) {
+
+    .story-section {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        min-height: auto !important;
+        padding: 0 !important;
+    }
+
+    .story-image {
+        width: 100% !important;
+        height: auto !important;
+        min-height: 0 !important;
+        max-height: none !important;
+    }
+
+    .story-image img {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 100% !important;
+        object-fit: contain !important;
+        display: block !important;
+    }
+
+    .story-content {
+        width: 100% !important;
+        padding: 60px 8% !important;
+    }
+}
